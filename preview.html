@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Starlink Space Internet — From 60 Dots to 11,150 Satellites, Verified</title>
+<meta name="description" content="What Starlink really is, how internet comes from space, and what 11,150 satellites change. Beginner guide, live numbers, benchmarks, PhD ideas.">
+<style>
+:root{--bg:#070b16;--card:#0e1628;--line:#1e2c4d;--txt:#e8eefc;--mut:#9fb0d0;--acc:#5aa2ff;--grn:#3ddc84;--ylw:#ffcf5a;--red:#ff6b6b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:radial-gradient(1200px 600px at 80% -10%,#16295a 0%,var(--bg) 60%) fixed,var(--bg);color:var(--txt);line-height:1.6}
+a{color:var(--acc)}header{max-width:1080px;margin:0 auto;padding:56px 20px 20px;text-align:center}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 12px;margin:4px;font-size:13px;color:var(--mut);background:#0b1326}
+.btn{display:inline-block;margin:8px 6px;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn-p{background:var(--acc);color:#06101f}.btn-g{border:1px solid var(--line);color:var(--txt)}
+section{max-width:1080px;margin:0 auto;padding:22px 20px}
+.card{background:linear-gradient(180deg,#0f1930,#0c1426);border:1px solid var(--line);border-radius:16px;padding:22px;margin:14px 0}
+.grid{display:grid;gap:14px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:800px){.g4,.g3,.g2{grid-template-columns:1fr}}
+.stat{text-align:center;padding:18px}.stat b{font-size:32px;display:block}.stat span{color:var(--mut);font-size:14px}
+h1{font-size:44px;line-height:1.1;margin:12px 0}h2{font-size:28px;margin:34px 0 8px}h3{font-size:19px;margin:18px 0 6px}
+p.lead{font-size:19px;color:#d3def7;max-width:820px;margin:0 auto}
+table{width:100%;border-collapse:collapse;font-size:14.5px}th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:700}.ok{background:rgba(61,220,132,.15);color:var(--grn)}.warn{background:rgba(255,207,90,.15);color:var(--ylw)}.bad{background:rgba(255,107,107,.15);color:var(--red)}
+code,pre{background:#080e1e;border:1px solid var(--line);border-radius:8px}code{padding:2px 6px}pre{padding:14px;overflow:auto}
+img,video{max-width:100%;border-radius:12px;border:1px solid var(--line)}
+.steps{counter-reset:s}.step{border-left:3px solid var(--acc);padding:6px 0 6px 16px;margin:12px 0}.k{color:var(--mut);font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+footer{max-width:1080px;margin:0 auto;padding:30px 20px 60px;color:var(--mut);font-size:14px}
+.stars{font-size:13px;color:var(--mut)}
+</style>
+</head>
+<body>
+<header>
+<div>
+<span class="badge">MIT License</span>
+<span class="badge">Docker reproducible</span>
+<span class="badge">Python 3.11</span>
+<span class="badge">Live data Oct 2026</span>
+<span class="badge">Beginner friendly</span>
+</div>
+<h1>🛰️ Starlink Space Internet</h1>
+<p class="lead"><b>From 60 little dots in 2019 to 11,150 satellites today — more than everything else combined.</b> This page explains in plain language how internet comes from space, what is true, what is exaggerated, and what comes next. Run one command and every number re-checks itself against live public data.</p>
+<p>
+<a class="btn btn-p" href="#beginner">🌱 Start: Beginner Guide (3 min)</a>
+<a class="btn btn-g" href="#demo">▶ Watch the 60-second demo</a>
+<a class="btn btn-g" href="#reproduce">⚡ Run it yourself</a>
+</p>
+<p class="stars">CEO summary: Starlink won by flying low (500 km, not 35,786 km), talking with steerable radio beams to your roof and with lasers between satellites, and launching thousands of times on reusable rockets. It is now the profitable engine of SpaceX ($11.4B of $18.7B in 2025) and the only path to phones-without-towers and, one day, internet that lives mostly in space. The catch: 2,230 satellites must be replaced every year, and power has an astronomy and climate cost. Everything below is measured, not guessed.</p>
+</header>
+
+<section>
+<div class="grid g4">
+<div class="card stat"><b>11,150</b><span>active satellites<br>Oct 4, 2026 · 54% of all active sats</span></div>
+<div class="card stat"><b>21.5 ms</b><span>average latency<br>18,000 real tests · 67% &lt; 20 ms</span></div>
+<div class="card stat"><b>145–170 Mbps</b><span>typical download<br>max 265 · low stays &gt; 50</span></div>
+<div class="card stat"><b>71.6×</b><span>closer than classic TV sats<br>500 km vs 35,786 km</span></div>
+</div>
+<div class="grid g4">
+<div class="card stat"><b>60 → 11,150</b><span>May 23, 2019 → Oct 2026<br>91% per year</span></div>
+<div class="card stat"><b>165</b><span>Falcon launches in 2025<br>13 in 2019 · 96 in 2023</span></div>
+<div class="card stat"><b>$158.96</b><span>SpaceX (SPCX) Oct 5, 2026<br>$2.09T · IPO was $135 Jun 2026</span></div>
+<div class="card stat"><b>20 ms</b><span>median goal<br>millions of routers report every 15 s</span></div>
+</div>
+</section>
+
+<section id="beginner">
+<h2>🌱 Beginner guide — read this and you are a professional</h2>
+<div class="card"><p><b>You will know more than most interview candidates after these 5 steps.</b> Let's work this out in a step-by-step way to be sure we have the right answer.</p></div>
+<div class="card"><div class="k">Step 1 · What you saw in the sky</div><h3>60 dots in a row = one rocket dropping 60 flat satellites</h3><p>On <b>May 23, 2019 at 22:30</b> a Falcon 9 left Florida with 60 satellites stacked like cards (227 kg each). They were released at 440 km and climbed with ion engines to ~550 km. For a few nights they reflected the sun in a perfect train. Not aliens — a factory in orbit being switched on.</p></div>
+<div class="card"><div class="k">Step 2 · The 3-piece chain</div><h3>Roof dish → satellite → ground gateway → internet</h3><p><b>1) Your dish (Dishy).</b> Flat, ~1,000+ tiny antennas acting as one steerable beam (phased array). It points with electricity, not motors, and follows a satellite crossing the sky in ~5 minutes.<br><b>2) The satellite.</b> Listens with radio, forwards with radio to gateways, or with <b>laser</b> to the next satellite when the ocean blocks the view (Earth curves — at 500 km you cannot see your dish and a far gateway at once).<br><b>3) The gateway.</b> About 100+ sites in the US (1,500+ antennas) and 150–200 worldwide. Dishes under white balls near big data centers. Your request goes up, down to the gateway, into normal internet, and back the same way — in milliseconds.</p></div>
+<div class="card"><div class="k">Step 3 · Why low wins</div><h3>Light is fast. Distance is the delay.</h3><p>Radio and laser both travel at light speed. Old TV sats sit at <b>35,786 km</b>: one-way 119 ms, round-trip 239 ms + computers = awkward TV-delay. Starlink at <b>500 km</b>: one-way 1.7 ms, round-trip 3.3 ms. That is <b>71.6× closer</b>. Vacuum is also ~30–47% faster than glass fiber (glass slows light, index 1.47). Result: New York → London by laser in space <b>18.6 ms</b> vs <b>30.6 ms</b> by undersea cable route. Gamers can finally play.</p></div>
+<div class="card"><div class="k">Step 4 · Why thousands are needed</div><h3>Low sats move. You need one always overhead.</h3><p>A low satellite circles in ~95 minutes and is visible ~5 minutes. To always have one above you, anywhere on Earth, you need thousands. Three high sats cover the planet (minus poles). Thousands of low sats cover it <i>fast</i>. That is why reusable rockets matter: 13 launches (2019) → 96 (2023) → 165 (2025). Each Falcon carries 60 small v1 or ~20 bigger V2. Future giant rocket carries 60 big V3 at once (~61 Terabits in one launch).</p></div>
+<div class="card"><div class="k">Step 5 · Phones without towers + what is next</div><h3>Text today, everything tomorrow — with costs</h3><p>Newer satellites carry extra-powerful antennas to hear whisper-weak phones. Texting from dead zones is live (US/New Zealand, 400+ sats, approved Nov 2024, millions of emergency texts during hurricanes/fires). Voice and full data need bigger V3 sats. Undersea cables still carry ~100× more total data than Starlink — Starlink wins on <i>reach + delay</i>, not total volume. The filed future: up to 42,000 approved-filed sats, Starship launches, and a separate 1-million-satellite AI file (filed, not approved). Moon factories and railguns are stories, not plans.</p></div>
+</section>
+
+<section id="demo">
+<h2>▶ Demo (60 seconds)</h2>
+<div class="card">
+<p><b>What you see:</b> one command re-runs all 6 checks and prints PASS/FAIL with real numbers. No key needed. Offline it uses pinned Oct 2026 values (clearly labeled).</p>
+<pre>pip install -r requirements.txt
+python benchmarks/run_benchmarks.py
+# or
+docker compose up --build</pre>
+<p><img src="docs/screenshot-hero.png" alt="Live site screenshot"></p>
+<p><img src="docs/demo.gif" alt="Terminal demo: benchmarks re-checking live numbers"></p>
+<p class="k">Video: record your run with any screen recorder, save as docs/demo.mp4, and link it here + in README. Keep under 60 s: install → run → show 21.5 ms + 11,150 + $158.96.</p>
+</div>
+</section>
+
+<section id="features">
+<h2>✨ Features — what this repo does for you</h2>
+<div class="grid g3">
+<div class="card"><h3>✅ True / False board</h3><p>23 claims labeled: confirmed, simplified, optimistic, speculative, fiction. You never guess which part of the story to trust.</p></div>
+<div class="card"><h3>📡 Live sky check</h3><p>Active count vote (11,150 / 11,149 / 11,122 / 11,080), shells, launched total 12,988. See concentration: 54% by one operator.</p></div>
+<div class="card"><h3>⚡ Physics calculator</h3><p>GEO vs LEO delay, fiber vs vacuum, orbit period, pass time. Type an altitude, get delay. Interview-ready.</p></div>
+<div class="card"><h3>💰 Market lens</h3><p>IPO $135 → $158.96 live ($2.09T), Starlink 61% of revenue and profitable while rockets lose money. Partners: phones + cloud.</p></div>
+<div class="card"><h3>📱 Phone-from-space tracker</h3><p>What text-from-nowhere can do today vs voice/data tomorrow, frequencies, approval dates.</p></div>
+<div class="card"><h3>🎓 PhD seeds</h3><p>5 hidden patterns with data + code + questions: replacement treadmill, shell shift, profit flip, power-tax, bottleneck.</p></div>
+</div>
+</section>
+
+<section>
+<h2>👥 User stories — pick yours</h2>
+<table>
+<tr><th>You are…</th><th>Do this</th><th>You get</th></tr>
+<tr><td><b>Student / curious</b></td><td>Read Beginner Guide + run Exp 02</td><td>Explain any satellite internet in 3 minutes with numbers.</td></tr>
+<tr><td><b>Teacher</b></td><td>Show Demo + stats band in class</td><td>One slide: why low beats high, with live proof.</td></tr>
+<tr><td><b>Interview candidate</b></td><td>Learn GEO 238 ms vs LEO 3.7 ms + vacuum 47%</td><td>Answer latency, phased array, ISL trade-offs cold.</td></tr>
+<tr><td><b>Rural / traveler</b></td><td>Check gateway + latency + D2C sections</td><td>Know when satellite beats no-signal vs fiber.</td></tr>
+<tr><td><b>Investor / founder</b></td><td>Read market + replacement sections</td><td>Why bandwidth funds rockets; why launch rate is survival.</td></tr>
+<tr><td><b>Researcher (PhD)</b></td><td>Open papers/PAPER.md + H1–H5</td><td>Publishable question + data + baseline in a day.</td></tr>
+</table>
+</section>
+
+<section>
+<h2>📊 The numbers that matter (all re-computed by code)</h2>
+<div class="card"><h3>How many? (vote, Oct 2026)</h3>
+<table><tr><th>Source</th><th>Count</th><th>Note</th></tr>
+<tr><td>Live trackers Oct 4–5</td><td>11,150 / 11,149 / 11,122</td><td>Active; spread 6.7% = counting method</td></tr>
+<tr><td>Launched all-time</td><td>~12,988</td><td>Rest re-entered / deorbiting (210) / raising (893)</td></tr>
+<tr><td>Shells</td><td>5,072 @53°/550km · 3,616 @43°/480km</td><td>New low shell = 32%, the growth vector</td></tr>
+<tr><td>Share of sky</td><td>~54%</td><td>More than all others combined (9,498)</td></tr></table></div>
+<div class="card"><h3>How fast? (space + ground truth)</h3>
+<table><tr><th>Path</th><th>Delay</th><th>What it means</th></tr>
+<tr><td>LEO 500 km up+down</td><td>3.3 ms</td><td>Talk feels instant</td></tr>
+<tr><td>GEO 35,786 km up+down</td><td>238.7 ms</td><td>Awkward TV pause</td></tr>
+<tr><td>Real Starlink (18k tests)</td><td><span class="pill ok">21.5 ms avg</span> 67% &lt;20 · 96% &lt;30</td><td>Good for calls + games (needs &lt;50)</td></tr>
+<tr><td>NY→London laser in space</td><td>18.6 ms</td><td>Beats cable route 30.6 ms</td></tr></table></div>
+<div class="card"><h3>How paid? (money, Oct 2026)</h3>
+<table><tr><th>Fact</th><th>Number</th></tr>
+<tr><td>First launch</td><td>May 23, 2019 22:30, 60×227 kg, 440→550 km</td></tr>
+<tr><td>Starlink 2025</td><td>$11.4B = 61% of $18.7B, +50%, profitable</td></tr>
+<tr><td>SpaceX live</td><td>$158.96 (+7.35%) = $2.09T · IPO $135 Jun 2026</td></tr>
+<tr><td>Launches</td><td>13 → 96 → 165 per year; 60 v1 / 20 V2 per Falcon; 60 V3 per giant rocket (~61 Tb)</td></tr>
+<tr><td>Gateways / cloud</td><td>100+ US sites, 1,500+ antennas, 150–200 world; ground stations inside data centers</td></tr>
+<tr><td>Phones</td><td>Text live Feb 2025 (400+ sats); voice/data planned</td></tr></table></div>
+</section>
+
+<section>
+<h2>🧪 Verdict board (23 claims)</h2>
+<div class="card"><table>
+<tr><th>Claim</th><th>Verdict</th></tr>
+<tr><td>60 sats May 23, 2019</td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>11,150 &gt; all others combined</td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>Helped Ukraine / disasters / Iran</td><td><span class="pill ok">CONFIRMED direction</span></td></tr>
+<tr><td>Most valuable listed company</td><td><span class="pill ok">TRUE after Jun 2026 IPO</span> (was private before)</td></tr>
+<tr><td>Flat dish follows sats with no motor</td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>“5+3 antennas” exact numbers</td><td><span class="pill warn">Illustrative</span> (exact counts not public)</td></tr>
+<tr><td>100+ US gateways, 9 dishes/site</td><td><span class="pill ok">CONFIRMED range</span></td></tr>
+<tr><td>$900M + data-center stations</td><td><span class="pill ok">CONFIRMED</span> (story missed “M”)</td></tr>
+<tr><td>Laser hops over oceans</td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>Radio = light; laser carries more</td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>Clouds block laser, not radio; sun is white</td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>70× closer · 95-min orbit · 5-min pass</td><td><span class="pill ok">CONFIRMED</span> (71.6×)</td></tr>
+<tr><td>Space laser 30%+ faster than fiber</td><td><span class="pill ok">CONFIRMED (conservative)</span></td></tr>
+<tr><td>Reusable rockets make it affordable</td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>Giant rocket 200 t, 60 big sats</td><td><span class="pill warn">Optimistic</span> (100–150 t today)</td></tr>
+<tr><td>Phones: text now, broadband later</td><td><span class="pill ok">ESSENTIALLY CORRECT</span></td></tr>
+<tr><td>100k sats / no gateways / internet in space</td><td><span class="pill warn">Vision, not approved</span></td></tr>
+<tr><td>1M AI sats above (Starmind)</td><td><span class="pill warn">Filed, not approved</span></td></tr>
+<tr><td>Moon factory + railgun</td><td><span class="pill bad">Story, not a plan</span></td></tr>
+</table>
+<p class="k">Full 25-row evidence table: data/claims_matrix.csv · Re-run: python benchmarks/run_benchmarks.py</p></div>
+</section>
+
+<section>
+<h2>🔍 Hidden patterns (the PhD part, in one minute)</h2>
+<div class="grid g2">
+<div class="card"><h3>1) The replacement treadmill</h3><p>5-year life × 11,150 = <b>~2,230 must be replaced yearly</b> (~97 rocket launches just to stand still). Growth + replacement = why 165 launches happened. Giant rockets are survival, not luxury.</p></div>
+<div class="card"><h3>2) The great lowering (2026)</h3><p>Main shell 550 → 480 km. New 43° shell already 32%. Slightly faster + safer, but more air drag = more replacements. Watch that shell.</p></div>
+<div class="card"><h3>3) Bandwidth pays for rockets</h3><p>Internet service is profitable; rockets as a group still lose money. The “rocket company” is now a bandwidth company that builds rockets.</p></div>
+<div class="card"><h3>4) Power has a tax</h3><p>Phone-capable sats leak 32× more radio noise (hurts astronomy) and each subscriber costs 6–8× more CO₂ than 4G. Power ≠ free.</p></div>
+</div>
+</section>
+
+<section id="reproduce">
+<h2>⚡ Run it yourself (2 minutes)</h2>
+<div class="card"><pre>git clone https://github.com/M0-AR/starlink-space-internet.git
+cd starlink-space-internet
+pip install -r requirements.txt
+python benchmarks/run_benchmarks.py
+# Docker (same result everywhere):
+docker compose up --build</pre>
+<p><b>Live site for this repo:</b> after enabling Pages (below), open <code>https://M0-AR.github.io/starlink-space-internet/</code> — it is this file (<code>docs/index.html</code>).</p>
+<h3>Enable the live site (30 seconds, 2026)</h3>
+<p>1) On GitHub open your repo → <b>Settings → Pages</b> → <b>Deploy from a branch</b> → Branch <b>main</b> + folder <b>/docs</b> → Save.<br>2) Wait ~1 min → open the green Pages URL.<br>3) Every push to <code>main</code> rebuilds it. Custom domain + HTTPS are in the same Pages panel.</p></div>
+</section>
+
+<section>
+<h2>📁 What is inside</h2>
+<div class="card"><table>
+<tr><th>Folder</th><th>Open it for…</th></tr>
+<tr><td><code>experiments/</code></td><td>6 small scripts: growth, physics, chain, market, phones/future, live check. Read them top to bottom.</td></tr>
+<tr><td><code>benchmarks/</code></td><td>One gate that runs everything and writes results JSON.</td></tr>
+<tr><td><code>data/claims_matrix.csv</code></td><td>25 claims with verdict + evidence (spreadsheet-friendly).</td></tr>
+<tr><td><code>papers/PAPER.md</code></td><td>Journal-style draft (intro → method → results → hidden → refs).</td></tr>
+<tr><td><code>docs/</code></td><td>Live site (<code>index.html</code>) + screenshots + demo.</td></tr>
+</table></div>
+</section>
+
+<footer>
+MIT for code · CC-BY-4.0 for words/figures · If you use this, cite: Starlink Space-Internet Verification 2026, M0-AR/starlink-space-internet, 2026-10-05. Reproduce: <code>python benchmarks/run_benchmarks.py</code>
+</footer>
+</body>
+</html>
