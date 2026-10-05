@@ -7,7 +7,7 @@
 ![Docker reproducible](https://img.shields.io/badge/Docker-reproducible-2496ED.svg)
 ![Live data Oct 2026](https://img.shields.io/badge/Live%20data-Oct%202026-brightgreen.svg)
 
-**🌐 Live website (click and read like a site): https://M0-AR.github.io/starlink-space-internet/** — same story as below, as a beautiful page (`docs/index.html` + `preview.html`).
+**🌐 Live website (click and read like a site): https://m0-ar.github.io/starlink-space-internet/preview.html** — same story as below, as a beautiful page (`docs/preview.html` + `docs/index.html` + root `preview.html`). If the short link 404s, always use the full `/preview.html` path.
 
 ## CEO summary — 30 seconds, the whole story
 
@@ -191,11 +191,12 @@ Each has data + code + open question in `papers/PAPER.md` → pick one and you h
 
 ## 🌐 Live site — how to turn it on (30 seconds, 2026)
 
-GitHub Pages looks for `index.html`, `index.md`, or `README.md` as the entry file. This repo already has `docs/index.html` (copy of `preview.html`) + `.nojekyll`.
+GitHub Pages looks for `index.html`, `index.md`, or `README.md` as the entry file. This repo already has `docs/index.html` + `docs/preview.html` (both copies of root `preview.html`) + `.nojekyll`.
 
 1. On GitHub open repo → **Settings → Pages** → **Deploy from a branch** → Branch **main** + folder **/docs** → Save.
-2. Wait ~1 min → open the green URL: `https://M0-AR.github.io/starlink-space-internet/`.
-3. Every push to `main` rebuilds it. Custom domain + HTTPS are in the same panel. Alternative: Pages → **GitHub Actions** workflow for custom builds.
+2. Wait ~1 min → open the full path (never the bare domain alone): `https://m0-ar.github.io/starlink-space-internet/preview.html`.
+3. Bookmark too: `https://m0-ar.github.io/starlink-space-internet/` (= `docs/index.html`). If you see 404, add `/preview.html` — Pages only serves files inside `/docs`, root `preview.html` alone is not served.
+4. Every push to `main` rebuilds it. Custom domain + HTTPS are in the same panel. Alternative: Pages → **GitHub Actions** workflow for custom builds.
 
 Preview without Pages: `https://htmlpreview.github.io/?https://github.com/M0-AR/starlink-space-internet/blob/main/preview.html` or just open `preview.html` locally.
 
