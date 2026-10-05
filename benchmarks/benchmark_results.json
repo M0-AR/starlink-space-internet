@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-05",
+  "experiments": {
+    "01_constellation_growth": {
+      "counts": {
+        "wikipedia_jun2026": 10413,
+        "orbitalradar_oct4_2026": 11150,
+        "keeptrack_oct4_2026": 11156,
+        "mcdowell_aug27_2026": 11102
+      },
+      "total_est": 20648.148148148146,
+      "cagr_19_26": 0.910540426272684,
+      "replacement_per_year": 2230.0
+    },
+    "02_latency_physics": {
+      "geo_leo_ratio_500": 71.572,
+      "leo_rtt_ms": 3.6692050471796724,
+      "geo_rtt_ms": 238.73849421522138,
+      "vacuum_advantage_pct": 47.0,
+      "leo_period_min": 95.50211815557677
+    },
+    "03_gateway_chain": {
+      "gateway_us_sites": 100,
+      "gateway_antennas_us": 1500,
+      "gateway_global_est": "150-200",
+      "google_investment_M": 900,
+      "google_cloud_deal": "2021-05-13",
+      "dishy_elements_claim": 1200
+    },
+    "04_market_valuation": {
+      "ipo_price": 135,
+      "ipo_valuation_T": 1.77,
+      "ipo_date": "2026-06-12",
+      "ticker": "SPCX",
+      "live_spcx_oct5_2026": 158.96,
+      "live_spcx_mcap_T": 2.094,
+      "live_spcx_chg_pct": 7.35,
+      "starlink_rev_2025_B": 11.4,
+      "starlink_share_pct": 61,
+      "tmus_oct5_2026": 163.64,
+      "googl_oct5_2026": 343.5,
+      "falcon_v1_per_launch": 60,
+      "falcon_v2_per_launch": 20,
+      "starship_v3_per_launch": 60
+    },
+    "05_direct_to_cell_future": {
+      "d2c_status": "messaging-live-voice-planned",
+      "d2c_sats": 400,
+      "fcc_scs": "2024-11-26",
+      "v3_per_sat_Tbps": 1,
+      "v3_per_starship_Tbps": 61,
+      "starmind_filed": 1000000,
+      "uemr_factor": 32
+    },
+    "06_live_verification": {
+      "date_utc": "2026-10-05",
+      "pinned": {
+        "orbitalradar_oct4_2026": 11150,
+        "celestrak_oct5_2026": 11149,
+        "launched_total": 12988,
+        "spcx": 158.96,
+        "spcx_mcap_T": 2.094,
+        "tmus": 163.64,
+        "googl": 343.5,
+        "pcmag_latency_ms": 21.5,
+        "pcmag_n": 18000,
+        "pcmag_lt20_pct": 67,
+        "pcmag_lt30_pct": 96
+      },
+      "celestrak_live_tle_truncated": "offline-pinned-11149",
+      "live_TMUS": "offline-pinned-163.64",
+      "live_GOOGL": "offline-pinned-343.5"
+    }
+  },
+  "verdicts": [
+    {
+      "claim": "May23-2019 60 sats Falcon9",
+      "verdict": "CONFIRMED",
+      "evidence": "SpaceflightNow/Reuters/SpaceNews/BBC + press kit; 22:30 EDT SLC-40, 227kgx60, 440->550km"
+    },
+    {
+      "claim": "11,000 sats > all others combined",
+      "verdict": "CONFIRMED",
+      "evidence": "OrbitalRadar Oct4'26 11,150 =54% of ~20,648; KeepTrack 11,156; McDowell 11,102; Wiki Jun'26 10,413"
+    },
+    {
+      "claim": "Ukraine/Iran/disaster lifeline",
+      "verdict": "CONFIRMED-DIRECTION",
+      "evidence": "Ukraine widely documented; Iran 2022+ activation; FCC STA Helene/Milton/LA fires D2C texts"
+    },
+    {
+      "claim": "Most valuable publicly traded",
+      "verdict": "NEEDS-QUALIFIER (FALSE pre-Jun2026, TRUE post-IPO)",
+      "evidence": "Private $74B'21 -> IPO $135 Jun12'26 $1.77T SPCX Nasdaq largest US IPO; transcript mid-2026 borderline"
+    },
+    {
+      "claim": "Dishy phased array tracks LEO",
+      "verdict": "CONFIRMED",
+      "evidence": "Teardowns ~1000+ elements; electronic steering; 550->480km lowering 2026"
+    },
+    {
+      "claim": "5+3 onboard arrays",
+      "verdict": "SIMPLIFIED-UNVERIFIED",
+      "evidence": "SpaceX undisclosed exact counts; multi Ku/Ka/E + laser confirmed, numbers illustrative"
+    },
+    {
+      "claim": "Gateways 100 US +50 world, 9 dishes",
+      "verdict": "CONFIRMED-RANGE",
+      "evidence": "2025 report 100+ US sites 1500+ antennas; global 150-200 est; 9/site typical varies"
+    },
+    {
+      "claim": "Google $900 + DC co-location",
+      "verdict": "CONFIRMED (transcript missing 'M')",
+      "evidence": "SEC 10-K $900M Jan2015 + Fidelity; Google Cloud deal May13'21 New Albany Ohio"
+    },
+    {
+      "claim": "Laser sat-to-sat for ocean (curvature)",
+      "verdict": "CONFIRMED",
+      "evidence": "LISL papers + SSU'25; geometry blocks dual gateway view at 500km"
+    },
+    {
+      "claim": "Radio=light same speed; laser 10-100x/beam",
+      "verdict": "CONFIRMED-PLAUSIBLE",
+      "evidence": "c same; higher carrier => bandwidth; real gain mod/WDM dependent"
+    },
+    {
+      "claim": "Laser blocked by clouds, radio passes",
+      "verdict": "CONFIRMED",
+      "evidence": "Mie vs cm-wave; sun white (G2V) yellow via Rayleigh"
+    },
+    {
+      "claim": "Binary tall/short long/short",
+      "verdict": "SIMPLIFIED-CORRECT",
+      "evidence": "Intro to ASK/FSK; real QAM/OFDM"
+    },
+    {
+      "claim": "GEO 35,000km 3 sats cover Earth",
+      "verdict": "CONFIRMED (35,786km)",
+      "evidence": "120deg spacing excl poles"
+    },
+    {
+      "claim": "70x closer, 90min, 5min pass",
+      "verdict": "CONFIRMED",
+      "evidence": "35786/500=71.6x; period ~95min@550km; 5min pass @25deg"
+    },
+    {
+      "claim": "Vacuum 30% faster than fiber",
+      "verdict": "CONFIRMED-CONSERVATIVE",
+      "evidence": "n=1.47 => fiber 32% slower / vacuum 47% faster same dist; NY-London practice 30-47%"
+    },
+    {
+      "claim": "Need Falcon 9 reuse for economics",
+      "verdict": "CONFIRMED",
+      "evidence": "13'19/96'23/165'25 cadence; 60v1->20V2 mass limit; thousands needed (vs 3 GEO)"
+    },
+    {
+      "claim": "Starship 20t->200t 60/launch",
+      "verdict": "OPTIMISTIC (20t ok, 200t aspirational)",
+      "evidence": "Falcon 22.8t confirmed; Starship 100-150t reusable target; 60xV3 61Tbps/planned late2026"
+    },
+    {
+      "claim": "V2 D2C bigger arrays, weak uplink",
+      "verdict": "CONFIRMED-PRINCIPLE",
+      "evidence": "Link-budget physics; FCC SCS 1910-1915/1990-1995MHz T-Mobile lease"
+    },
+    {
+      "claim": "D2C voice+text now, no streaming",
+      "verdict": "ESSENTIALLY-CORRECT (generous)",
+      "evidence": "Messaging live Feb'25 (400+ sats, FCC Nov'24); voice/data planned (OOBE deferred)"
+    },
+    {
+      "claim": "Fiber 100x Starlink total",
+      "verdict": "PLAUSIBLE",
+      "evidence": "Subsea Pbps vs Starlink low-Pbps shared; method-dependent"
+    },
+    {
+      "claim": "100k sats / majority traffic / no gateways",
+      "verdict": "SPECULATIVE",
+      "evidence": "Approved 12k/filed 42k; May2026 quote unverified exact; terrestrial interconnect still needed"
+    },
+    {
+      "claim": "Starmind 1M higher solar AI orbit",
+      "verdict": "FILED-NOT-APPROVED + PLAUSIBLE",
+      "evidence": "Name+M FCC Jan'26 up to 1M confirmed; AI1 75m 250kW; xAI merger Feb'26; higher solar duty plausible"
+    },
+    {
+      "claim": "Moon factory + railgun",
+      "verdict": "FICTION-TEASER",
+      "evidence": "No primary source; treat as YouTube speculation"
+    }
+  ]
+}

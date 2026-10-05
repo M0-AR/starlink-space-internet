@@ -1,0 +1,15 @@
+services:
+  starlink-verify:
+    build: .
+    container_name: starlink-verify-2026
+    volumes:
+      - ./data:/app/data
+      - ./benchmarks:/app/benchmarks
+    command: python benchmarks/run_benchmarks.py
+  notebook:
+    build: .
+    container_name: starlink-notebook
+    ports:
+      - "8888:8888"
+    command: jupyter notebook --ip=0.0.0.0 --allow-root --no-browser --port=8888
+    profiles: ["notebook"]

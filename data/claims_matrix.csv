@@ -1,0 +1,26 @@
+claim_id,claim,verdict,evidence_sources,confidence
+C01,First launch May 23 2019 60 sats Falcon 9 SLC-40 22:30 EDT,CONFIRMED,SpaceflightNow/Reuters/SpaceNews/BBC/press_kit v0.9 227kg 440-550km,0.99
+C02,Constellation ~11000 > all other non-Starlink combined,CONFIRMED,"OrbitalRadar Oct4 2026 11150 (54%); KeepTrack 11156; McDowell 11102; Wiki Jun2026 10413",0.98
+C03,Ukraine battlefield + US disaster + Iran lifeline,CONFIRMED-DIRECTION,FCC STA Helene/Milton/LA fires; Ukraine Starshield widely reported; Iran 2022 activation,0.90
+C04,Most valuable publicly traded company,NEEDS-QUALIFIER,"Private to Jun11 2026; IPO $135 $1.77T SPCX Nasdaq largest US IPO; false pre-IPO true post-IPO",0.95
+C05,Dishy flat phased array ~1200 elements tracks LEO no motion,CONFIRMED,Teardowns ~1000+ elements; FCC filings; 550->480km lowering 2026,0.88
+C06,Satellite has 5 user + 3 gateway phased arrays,SIMPLIFIED-UNVERIFIED,SpaceX undisclosed; multi Ku/Ka/E + laser confirmed numbers illustrative,0.50
+C07,Gateways 100+ US +50 world 9 dishes per site moving slowly,CONFIRMED-RANGE,2025 progress report 100+ US 1500+ antennas; global 150-200 est,0.85
+C08,Google $900M 2015 + DC co-location,CONFIRMED,"SEC 10-K $900M Jan2015; Google Cloud deal May13 2021 New Albany Ohio",0.99
+C09,Laser ISL relay when curvature blocks dual gateway view,CONFIRMED,LISL papers Chaudhry/Bhattacharjee + SSU 2025; geometry at 500km,0.95
+C10,Radio is light same speed laser 10-100x per beam,CONFIRMED-PLAUSIBLE,c same; higher carrier bandwidth; mod/WDM dependent,0.85
+C11,Laser blocked by clouds radio passes sun white not yellow,CONFIRMED,Mie vs cm-wave; G2V white Rayleigh reddening,0.97
+C12,Binary via amplitude/frequency tall-short long-short,SIMPLIFIED-CORRECT,Intro ASK/FSK; real QAM/OFDM,0.90
+C13,GEO 35000km 3 sats cover habitable Earth,CONFIRMED,Actual 35786km; 120deg spacing excl poles,0.98
+C14,70x closer 90min orbit 5min pass,CONFIRMED,35786/500=71.6x; ~95min@550km; 5min@25deg,0.97
+C15,Vacuum ~30% faster than fiber,CONFIRMED-CONSERVATIVE,n=1.47 fiber 32% slower vacuum 47% faster; NY-London 30-47%,0.92
+C16,Reusable Falcon 9 makes LEO economics viable 13/96/165 launches,CONFIRMED,60v1->20V2 mass limit; thousands needed vs 3 GEO,0.93
+C17,Starship 20t->200t 60 V3 per launch,OPTIMISTIC,Falcon 22.8t confirmed; Starship 100-150t reusable target 200t aspirational; 60xV3 61Tbps planned late2026,0.70
+C18,V2 D2C bigger arrays weak phone uplink,CONFIRMED-PRINCIPLE,Link budget; FCC SCS 1910-1915/1990-1995MHz T-Mobile lease,0.90
+C19,D2C voice+text now no streaming,ESSENTIALLY-CORRECT,Messaging live Feb2025 400+ sats FCC Nov2024; voice/data planned OOBE deferred,0.85
+C20,Subsea fiber 100x Starlink total throughput,PLAUSIBLE,Subsea Pbps vs Starlink low-Pbps shared method-dependent,0.75
+C21,100k sats majority traffic no gateways internet in space,SPECULATIVE,Approved 12k/filed 42k; May2026 quote unverified exact,0.40
+C22,Starmind 1M higher solar AI orbit device-Starlink-Starmind chain,FILED-NOT-APPROVED,Name+M FCC Jan2026 up to 1M; AI1 75m 250kW; xAI merger Feb2026,0.80
+C23,Moon factory + railgun,FICTION-TEASER,No primary source YouTube speculation,0.10
+C24,Hidden: V2 D2C UEMR 32x harms radio astronomy,HIDDEN-PATTERN,Bassa et al 2024 LOFAR 40-188MHz 15-1300Jy exceeds ITU-R,0.90
+C25,Hidden: LEO broadband 6-8x CO2 vs 4G + 54% concentration risk,HIDDEN-PATTERN,Osoro 2023 250kg CO2/sub/yr; 5yr life replacement ~2230/yr,0.88
