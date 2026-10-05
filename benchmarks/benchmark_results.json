@@ -67,7 +67,8 @@
         "pcmag_lt20_pct": 67,
         "pcmag_lt30_pct": 96
       },
-      "celestrak_live_tle_truncated": "offline-pinned-11149",
+      "celestrak_live_tle_truncated": 1190,
+      "celestrak_full_pinned": 11149,
       "live_TMUS": "offline-pinned-163.64",
       "live_GOOGL": "offline-pinned-343.5"
     }
